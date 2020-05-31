@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Fitness Website</title>
+   
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' media='screen' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+    
+
+    <script src='server.js'></script>
+</head>
+<body>
+    <header id="section1">
+        <div class="full">
+            <div class="nav-bar">
+                <div class="nav-logo">
+                    <img src= "images/logo1.png">
+                 </div>
+                 <div class="brand">
+                     <h3 style="font-weight: bolder;">Fit<span>Flex</span></h3>
+                 </div>
+                <div class="nav-links" id="nav-links">
+                    <i class="fa fa-close" onclick="closeMenu()"></i>
+                    <ul>
+                        <a href="#" class="active"><li>HOME</li></a>
+                        <a href="#section2"><li>PHYSICAL</li></a>
+                        <a href="#section4"><li>CONTACT</li></a>
+                        <a href="Login/login.html" target="_blank"><li>LOGIN</li></a>
+                    </ul>
+                   
+                    <button type="button" class="btn btn-secondary" style="margin-right: -108px;">
+                        <a href="SignUp/signup.html" target="_blank" style="color: white;">SIGN UP</button></a>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+    
+             </div>
+             <div class="banner-title">
+                 <h1 style="font-weight: bold;">Keep Going <span>You are<br> Stronger than</span> you Think</h1>
+                 <button type="button" class="btn btn-light" style="font-weight: bold;" ><a href="#section2">LET'S GO</a></button>
+             </div>
+             
+             <div class="notification">
+                 <div class="clock" id="datetime" onclick="document.getElementById('popup') .style.display='block'">
+                    <button type="button" class="btn" style="font-weight: bold;" >Date & Time</button>
+                     <i class="fa fa-calendar" id="cal" aria-hidden="true"></i>
+                     <i class="fa fa-clock-o" aria-hidden="true"></i>
+                </div>
+                <div id="popup" style="display:none; background: #23e629; border: 1px solid; black; font-family:Arial, Helvetica, sans-serif; height:200px;">
+                <script type=text/javascript>
+                    var tejas = new Date();
+                    document.write(tejas);           
+                </script>
+                <button onclick="document.getElementById('popup') .style.display='none'">Hide</button>
+                </div>
+
+                 
+             </div>
+        </div>
+    <script>
+        var show = document.getElementById("nav-links")
+        function showMenu(){
+            show.style.right = "0";
+        }
+        function closeMenu(){
+            show.style.right = "-200px";
+        }
+    </script>
+    </header>
+
+    <section id="section3">
+       
+    </section>
+      
+
+    <main id="section2">
+        
+        <div class="container">
+              <div class="box">
+                <div class="icon">01</div>
+                <br>
+                <div class="content">
+                    <h3 style="text-align: center; font-weight: bold;">Muscle Building</h3>
+                    <p>Muscle growth is the development of mass, density, shape, and function of muscle cells</p><br>
+                    <button class="btn btn-light" id="explore1"><a href="https://www.shape.com/fitness/tips/how-create-muscle-building-workout-plan" target="_blank" style="text-decoration: none; color:#e91e63">Explore</a></button>
+                </div>
+                </div>
+                <!---->
+            <div class="box"> 
+                <div class="icon">02</div>
+                <br>
+                <div class="content">
+                    <h3 style="text-align: center; font-weight: bold;">Weight Loss</h3>
+                    <p>Losing weight is not easy, and it takes commitment which you definitely have.Go ahead</p><br>
+                    <button class="btn btn-light" id="explore2"><a href="https://www.shape.com/fitness/workouts/best-weight-loss-exercises" target="_blank" style="text-decoration: none; color:#23e629">Explore</a></button>
+                </div>
+            </div>
+            <!---->
+            <div class="box">
+                <div class="icon">03</div>
+                <br>
+                <div class="content">
+                    <h3 style="text-align: center; font-weight: bold;">Diet</h3>
+                    <p>A balanced diet is one that gives your body the nutrients it needs to function correctly.</p><br>
+                    <button class="btn btn-light" id="explore3"><a href="https://www.healthline.com/nutrition/cutting-diet" target="_blank" style="text-decoration: none; color:#2196f3">Explore</a></button>
+                </div>
+            </div>                
+        </div>  
+ </main>
+
+
+ 
+    
+                
+        
+        
+
+
+ <section id="section4">
+     <div class="body4">
+     <div class="gallery">
+       
+     </div>
+     <footer>
+         <div class="footer-container">
+            <div class="left-col">
+                <h3>Fit<span>Flex</span></h3>
+                <div class="social-media">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>  
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-google"></i></a>
+                </div>
+                <p class="rights-text">@ 2020 Created By tejastu All Rights Reserved.</p>
+            </div>
+            <div class="right-col">
+            <h1>Our Newsletter</h1>
+            <div class="border"></div><br>
+            <p>Enter Your Email to get News and updates.</p>
+            <form  class="newsletter-form">
+                <input type="text" class="text4" placeholder="Enter your Email">
+                <input type="submit" class="button4" value="submit">
+            </form>
+        </div>
+
+
+         </div>
+     </footer>
+
+    </div>
+ </section>
+
+
+ <script>
+    var show = document.getElementById("nav-links")
+    function showMenu(){
+        show.style.right = "0";
+    }
+    function closeMenu(){
+        show.style.right = "-200px";
+    }
+</script>
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" ></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+ <script src="node.js"></script>
+
+
+
+
+</body>
+
+</html>
+
+
+
